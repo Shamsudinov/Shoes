@@ -5,12 +5,132 @@
     font-family: sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 html{
     scroll-behavior: smooth;
 }
 
+.wrapper{
+    width: 1600px;
+    margin: 0 auto;
+}
+
+/* .main-header{
+    border: 2px solid green;
+} */
+
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 10px 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background-color: white;
+}
+.main-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__link{
+    font-size: 35px;
+    font-weight: 600;
+    color: #c72092;
+    margin: 5px 0;
+    cursor: pointer;
+
+}
+
+.logo__link span{
+    color: #6c14d0;
+    text-decoration: underline;
+}
+
+.main-navigation-list{
+    list-style: none;
+}
+
+.main-navigation-list__item{
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+.main-navigation-list__link{
+    color: black;
+    transition: 0.2s;
+}
+
+.main-navigation-list__link:hover{
+    color: #c72092;
+}
+
+.user-block__link{
+    margin: 0 4px;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+}
+.user-block__link:hover{
+    color: #c72092;
+}
+
 .promo{
-    border: 1px solid red;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 100vh;
+    background-image: url(img/bg1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.promo__content{
+
+}
+
+.promo__title{
+    font-size: 90px;
+    line-height: 70px;
+    margin-bottom: 25px;
+}
+
+.promo__text{
+    width: 600px;
+    margin-bottom: 45px;
+    line-height: 21px;
+    text-align: justify;
+}
+
+.promo__link{
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(to right,#c72092,#6c14d0);
+}
+
+.social{
+    list-style: none;
+}
+
+.social__item{
+    margin-bottom: 20px;
+}
+
+.social__link{
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.social__link:hover{
+    color: #c72092;
 }
